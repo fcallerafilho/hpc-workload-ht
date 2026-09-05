@@ -1,0 +1,8 @@
+{
+  "threshold": 0.5717389089593807,
+  "holdout_rounds": 141,
+  "holdout_ap": 0.16587906292006369,
+  "holdout_f2": 0.23675920456782834,
+  "holdout_precision": 0.0774501735427774,
+  "holdout_recall": 0.4873902274262554
+}

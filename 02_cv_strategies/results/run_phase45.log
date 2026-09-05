@@ -1,0 +1,220 @@
+=== PHASE 4 DIAGNOSTIC Fri Aug 21 09:32:28     2026 ===
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+==============================================================================
+PHASE 4 - CV DIAGNOSIS (LightGBM small grid under each strategy)
+==============================================================================
+strategy          folds     CV-AP   test-PR-AUC  inflation
+------------------------------------------------------------------------------
+stratified            3    0.4627        0.0808       5.7x
+group                 3    0.2153        0.0808       2.7x
+stratified_group      3    0.2160        0.0775       2.8x
+tscv                  5    0.0880        0.0808       1.1x
+purged                5    0.1198        0.0808       1.5x
+logo_weekly           9    0.1361        0.0775       1.8x
+------------------------------------------------------------------------------
+  baseline (test prevalence) = 0.0403   |   written: cv_comparison.csv
+  Read: honest CV-AP should sit near test-PR-AUC; 'stratified' should not.
+=== PHASE 5 RETUNE Fri Aug 21 10:13:38     2026 ===
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+D:\Python\Python313\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+==================================================================================
+PHASE 5 - HONEST RE-TUNE
+  select rounds+structure by early stopping on a TEMPORAL holdout (1,710,966 rows, latest 19% of train jobs)
+  robustness check: 'purged' CV (5 folds) on the chosen config
+==================================================================================
+      [LightGBM] {'num_leaves': 15, 'learning_rate': 0.05, 'min_child_samples': 20} -> rounds=55 val_AP=0.1147
+      [LightGBM] {'num_leaves': 15, 'learning_rate': 0.05, 'min_child_samples': 100} -> rounds=55 val_AP=0.1147
+      [LightGBM] {'num_leaves': 15, 'learning_rate': 0.1, 'min_child_samples': 20} -> rounds=56 val_AP=0.1176
+      [LightGBM] {'num_leaves': 15, 'learning_rate': 0.1, 'min_child_samples': 100} -> rounds=56 val_AP=0.1176
+      [LightGBM] {'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20} -> rounds=80 val_AP=0.1206
+      [LightGBM] {'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 100} -> rounds=80 val_AP=0.1206
+      [LightGBM] {'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20} -> rounds=24 val_AP=0.1042
+      [LightGBM] {'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 100} -> rounds=24 val_AP=0.1042
+      [LightGBM] {'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20} -> rounds=87 val_AP=0.1262
+      [LightGBM] {'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 100} -> rounds=92 val_AP=0.1303
+      [LightGBM] {'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20} -> rounds=57 val_AP=0.1121
+      [LightGBM] {'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 100} -> rounds=51 val_AP=0.1091
+  LightGBM                         TEST PR-AUC=0.0782 (base 0.0793, -0.0011)  ROC=0.6266  rounds=92  purgedCV=0.1223  (612s, peak 4725MB)
+      chosen: {'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 100}
+      [CatBoost] {'depth': 4, 'learning_rate': 0.05} -> rounds=15 val_AP=0.0853
+      [CatBoost] {'depth': 4, 'learning_rate': 0.1} -> rounds=21 val_AP=0.0907
+      [CatBoost] {'depth': 6, 'learning_rate': 0.05} -> rounds=47 val_AP=0.0896
+      [CatBoost] {'depth': 6, 'learning_rate': 0.1} -> rounds=11 val_AP=0.0983
+      [CatBoost] {'depth': 8, 'learning_rate': 0.05} -> rounds=13 val_AP=0.0969
+      [CatBoost] {'depth': 8, 'learning_rate': 0.1} -> rounds=18 val_AP=0.1057
+  CatBoost                         TEST PR-AUC=0.0860 (base 0.0795, +0.0066)  ROC=0.6259  rounds=18  purgedCV=0.1121  (683s, peak 6667MB)
+      chosen: {'depth': 8, 'learning_rate': 0.1}
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 15, 'learning_rate': 0.05, 'min_samples_leaf': 20} -> rounds=200 val_AP=0.1156
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 15, 'learning_rate': 0.05, 'min_samples_leaf': 100} -> rounds=200 val_AP=0.1156
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 15, 'learning_rate': 0.1, 'min_samples_leaf': 20} -> rounds=25 val_AP=0.1213
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 15, 'learning_rate': 0.1, 'min_samples_leaf': 100} -> rounds=25 val_AP=0.1213
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 31, 'learning_rate': 0.05, 'min_samples_leaf': 20} -> rounds=100 val_AP=0.1169
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 31, 'learning_rate': 0.05, 'min_samples_leaf': 100} -> rounds=100 val_AP=0.1169
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 31, 'learning_rate': 0.1, 'min_samples_leaf': 20} -> rounds=150 val_AP=0.1167
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 31, 'learning_rate': 0.1, 'min_samples_leaf': 100} -> rounds=150 val_AP=0.1170
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 63, 'learning_rate': 0.05, 'min_samples_leaf': 20} -> rounds=50 val_AP=0.1220
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 63, 'learning_rate': 0.05, 'min_samples_leaf': 100} -> rounds=50 val_AP=0.1220
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 63, 'learning_rate': 0.1, 'min_samples_leaf': 20} -> rounds=50 val_AP=0.1148
+      [HistGradientBoostingClassifier] {'max_leaf_nodes': 63, 'learning_rate': 0.1, 'min_samples_leaf': 100} -> rounds=50 val_AP=0.1148
+  HistGradientBoostingClassifier   TEST PR-AUC=0.0699 (base 0.0752, -0.0053)  ROC=0.6194  rounds=50  purgedCV=0.1165  (4836s, peak 7293MB)
+      chosen: {'max_leaf_nodes': 63, 'learning_rate': 0.05, 'min_samples_leaf': 20}
+==================================================================================
+  written: D:\_fcall\UNIFEI\tcc\hpc_workload\cv_strategies\results\tuning_results.csv
+=== DONE Fri Aug 21 11:56:11     2026 ===

@@ -1,0 +1,4 @@
+model,select_cv,val_ap,purged_cv_ap,purged_cv_std,best_params,final_n_rounds,test_pr_auc,test_roc_auc,recall_global,base_pr_auc,fit_time_s,peak_rss_mb,status,error
+LightGBM,temporal_holdout,0.13034550702554465,0.12232189240791325,0.034341525413608846,"{""num_leaves"": 63, ""learning_rate"": 0.05, ""min_child_samples"": 100}",92,0.0781795813725821,0.6265694177092386,0.5470429871021097,0.079296476280412,612.4,4725.2,ok,
+CatBoost,temporal_holdout,0.10570030568331369,0.11214447698333734,0.03481451204664436,"{""depth"": 8, ""learning_rate"": 0.1}",18,0.0860349530305089,0.6259266076427528,0.6268585807041931,0.0794668754632016,683.2,6667.3,ok,
+HistGradientBoostingClassifier,temporal_holdout,0.12199432818537281,0.11650586586123372,0.03916348101959907,"{""max_leaf_nodes"": 63, ""learning_rate"": 0.05, ""min_samples_leaf"": 20}",50,0.06993464386591348,0.6193605541198031,0.6258907990357375,0.0752257038313608,4836.4,7293.4,ok,

@@ -1,0 +1,346 @@
+{
+  "OOM": {
+    "pr_auc": 0.0034922501376191514,
+    "baseline": 0.001131355167351023,
+    "lift": 3.0867849799952514,
+    "roc_auc": 0.6967512129505715,
+    "n": 1407162,
+    "n_pos": 1592,
+    "threshold": 1.0,
+    "precision": 0.005879967558799676,
+    "recall": 0.47361809045226133,
+    "flagged": 128232,
+    "fbeta": 0.028008915304606242,
+    "brier": 0.09320373157861842,
+    "recall_TIMEOUT": NaN,
+    "recall_FAILED": NaN,
+    "recall_OOM": 0.47361809045226133,
+    "recall_NODE_FAIL": NaN,
+    "mode": "OOM",
+    "states": [
+      "OUT_OF_MEMORY"
+    ],
+    "rounds": 75,
+    "floored": false,
+    "holdout_ap": 0.009055049178079928,
+    "train_pos_windows": 1053,
+    "test_pos_windows": 1592,
+    "seconds": 50.4,
+    "top_features": [
+      {
+        "f": "mem_free__std",
+        "gain": 94089089238601.0
+      },
+      {
+        "f": "gpu_fan_max__max",
+        "gain": 16748915318648.0
+      },
+      {
+        "f": "gpu_fan_mean__std",
+        "gain": 16336401426562.0
+      },
+      {
+        "f": "net_rx_rate__std",
+        "gain": 10484651675551.0
+      },
+      {
+        "f": "gpu_power_max__mean",
+        "gain": 10386426105308.0
+      },
+      {
+        "f": "net_tx_rate__mean",
+        "gain": 3636480184738.0
+      },
+      {
+        "f": "ctxsw_rate__std",
+        "gain": 3259510469737.0
+      },
+      {
+        "f": "forks_rate__mean",
+        "gain": 2958214151186.0
+      }
+    ]
+  },
+  "FAILED": {
+    "pr_auc": 0.016410798029525372,
+    "baseline": 0.009006781024501798,
+    "lift": 1.8220491854839027,
+    "roc_auc": 0.5668912600838968,
+    "n": 1407162,
+    "n_pos": 12674,
+    "threshold": 0.6580394047778279,
+    "precision": 0.018277822908204712,
+    "recall": 0.06391036768186839,
+    "flagged": 44316,
+    "fbeta": 0.04262619458594704,
+    "brier": 0.05091002197249848,
+    "recall_TIMEOUT": NaN,
+    "recall_FAILED": 0.06391036768186839,
+    "recall_OOM": NaN,
+    "recall_NODE_FAIL": NaN,
+    "mode": "FAILED",
+    "states": [
+      "FAILED"
+    ],
+    "rounds": 523,
+    "floored": false,
+    "holdout_ap": 0.10215956773627453,
+    "train_pos_windows": 14401,
+    "test_pos_windows": 12674,
+    "seconds": 90.8,
+    "top_features": [
+      {
+        "f": "mem_free__std",
+        "gain": 7289029.787078857
+      },
+      {
+        "f": "net_rx_rate__max",
+        "gain": 2702328.5758743286
+      },
+      {
+        "f": "net_tx_rate__max",
+        "gain": 2554117.8723831177
+      },
+      {
+        "f": "fs_avail__min",
+        "gain": 2473733.2703704834
+      },
+      {
+        "f": "mem_active__min",
+        "gain": 1993365.5979919434
+      },
+      {
+        "f": "net_rx_rate__min",
+        "gain": 1498073.0406417847
+      },
+      {
+        "f": "gpu_temp_max__max",
+        "gain": 1020758.7417907715
+      },
+      {
+        "f": "mem_free__mean",
+        "gain": 959261.2605895996
+      }
+    ]
+  },
+  "TIMEOUT": {
+    "pr_auc": 0.14500570192073403,
+    "baseline": 0.02826966617916061,
+    "lift": 5.129374397339968,
+    "roc_auc": 0.690479683924391,
+    "n": 1407162,
+    "n_pos": 39780,
+    "threshold": 0.5185240600466668,
+    "precision": 0.06397490871272642,
+    "recall": 0.49019607843137253,
+    "flagged": 304807,
+    "fbeta": 0.21016237468394813,
+    "brier": 0.15387183698644494,
+    "recall_TIMEOUT": 0.49019607843137253,
+    "recall_FAILED": NaN,
+    "recall_OOM": NaN,
+    "recall_NODE_FAIL": NaN,
+    "mode": "TIMEOUT",
+    "states": [
+      "TIMEOUT"
+    ],
+    "rounds": 182,
+    "floored": false,
+    "holdout_ap": 0.15057054202519587,
+    "train_pos_windows": 34119,
+    "test_pos_windows": 39780,
+    "seconds": 43.3,
+    "top_features": [
+      {
+        "f": "gpu_temp_mean__max",
+        "gain": 2132392.8911132812
+      },
+      {
+        "f": "mem_free__mean",
+        "gain": 1058025.7330322266
+      },
+      {
+        "f": "gpu_duty_min__mean",
+        "gain": 869977.5499267578
+      },
+      {
+        "f": "mem_free__min",
+        "gain": 701522.0225830078
+      },
+      {
+        "f": "net_rx_rate__min",
+        "gain": 614089.8600769043
+      },
+      {
+        "f": "net_tx_rate__min",
+        "gain": 547894.5694274902
+      },
+      {
+        "f": "mem_active__max",
+        "gain": 509140.4306335449
+      },
+      {
+        "f": "load1__min",
+        "gain": 491557.0778808594
+      }
+    ]
+  },
+  "hardware": {
+    "pr_auc": 0.023037890249989694,
+    "baseline": 0.011901259414338932,
+    "lift": 1.9357522971252163,
+    "roc_auc": 0.5893381840181139,
+    "n": 1407162,
+    "n_pos": 16747,
+    "threshold": 0.5029440703122253,
+    "precision": 0.019329954203903783,
+    "recall": 0.10383949364065205,
+    "flagged": 89964,
+    "fbeta": 0.055399102910443955,
+    "brier": 0.05669999009388612,
+    "recall_TIMEOUT": NaN,
+    "recall_FAILED": 0.10564936089632318,
+    "recall_OOM": 0.18090452261306533,
+    "recall_NODE_FAIL": 0.04514308746473196,
+    "mode": "hardware",
+    "states": [
+      "FAILED",
+      "NODE_FAIL",
+      "OUT_OF_MEMORY"
+    ],
+    "rounds": 475,
+    "floored": false,
+    "holdout_ap": 0.08493789795381813,
+    "train_pos_windows": 15776,
+    "test_pos_windows": 16747,
+    "seconds": 88.6,
+    "top_features": [
+      {
+        "f": "mem_free__std",
+        "gain": 6083847.006591797
+      },
+      {
+        "f": "net_rx_rate__max",
+        "gain": 3363247.248641968
+      },
+      {
+        "f": "fs_avail__min",
+        "gain": 2387992.7551574707
+      },
+      {
+        "f": "net_tx_rate__max",
+        "gain": 2312382.098968506
+      },
+      {
+        "f": "mem_active__min",
+        "gain": 1827645.2006912231
+      },
+      {
+        "f": "fs_avail__max",
+        "gain": 1194393.4448699951
+      },
+      {
+        "f": "net_tx_rate__min",
+        "gain": 1010364.4013214111
+      },
+      {
+        "f": "intr_rate__mean",
+        "gain": 959532.4007720947
+      }
+    ]
+  },
+  "pooled": {
+    "pr_auc": 0.13823128095285586,
+    "baseline": 0.04017092559349954,
+    "lift": 3.441077817117175,
+    "roc_auc": 0.6189054947256049,
+    "n": 1407162,
+    "n_pos": 56527,
+    "threshold": 0.5717389089593807,
+    "precision": 0.06777791749185293,
+    "recall": 0.4577104746404373,
+    "flagged": 381732,
+    "fbeta": 0.21282738878652274,
+    "brier": 0.2263153231527141,
+    "recall_TIMEOUT": 0.4730266465560583,
+    "recall_FAILED": 0.3761243490610699,
+    "recall_OOM": 0.8586683417085427,
+    "recall_NODE_FAIL": 0.37162434502216846,
+    "mode": "pooled",
+    "states": [
+      "FAILED",
+      "TIMEOUT",
+      "OUT_OF_MEMORY",
+      "NODE_FAIL"
+    ],
+    "rounds": 141,
+    "floored": false,
+    "holdout_ap": 0.16587906292006369,
+    "train_pos_windows": 49895,
+    "test_pos_windows": 56527,
+    "seconds": 40.9,
+    "top_features": [
+      {
+        "f": "gpu_fan_mean__mean",
+        "gain": 1029742.033203125
+      },
+      {
+        "f": "mem_free__mean",
+        "gain": 784463.6531677246
+      },
+      {
+        "f": "mem_free__min",
+        "gain": 552627.6765136719
+      },
+      {
+        "f": "fs_avail__mean",
+        "gain": 539078.0516967773
+      },
+      {
+        "f": "gpu_duty_mean__min",
+        "gain": 426997.31170654297
+      },
+      {
+        "f": "load1__min",
+        "gain": 410160.41287231445
+      },
+      {
+        "f": "gpu_mem_used__max",
+        "gain": 404970.7985534668
+      },
+      {
+        "f": "mem_active__max",
+        "gain": 399263.59228515625
+      }
+    ]
+  },
+  "NODE_FAIL": {
+    "pr_auc": 0.0016930748932690377,
+    "baseline": 0.0017631232224861104,
+    "lift": 0.9602703155833315,
+    "roc_auc": 0.45176288483314736,
+    "n": 1407162,
+    "n_pos": 2481,
+    "threshold": 1.0,
+    "precision": 0.0009315925775695685,
+    "recall": 0.08424022571543732,
+    "flagged": 224347,
+    "fbeta": 0.004460646003986836,
+    "brier": 0.16089831874368427,
+    "recall_TIMEOUT": NaN,
+    "recall_FAILED": NaN,
+    "recall_OOM": NaN,
+    "recall_NODE_FAIL": 0.08424022571543732,
+    "mode": "NODE_FAIL",
+    "states": [
+      "NODE_FAIL"
+    ],
+    "rounds": 300,
+    "floored": true,
+    "holdout_ap": null,
+    "note": "no valid holdout; fixed rounds",
+    "train_pos_windows": 322,
+    "test_pos_windows": 2481,
+    "seconds": 29.4
+  }
+}

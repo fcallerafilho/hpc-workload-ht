@@ -1,0 +1,183 @@
+{
+  "pr_auc_baseline": 0.040254028696516314,
+  "train_prior": 0.03198967339820698,
+  "roc_auc_baseline": 0.5,
+  "scale_pos_weight_train": 30.260087827469036,
+  "train": {
+    "n_windows": 9125945,
+    "n_positive": 291936,
+    "n_negative": 8834009,
+    "positive_fraction": 0.03198967339820698,
+    "scale_pos_weight": 30.260087827469036,
+    "per_state": {
+      "COMPLETED": {
+        "windows": 5338615,
+        "positives": 0,
+        "pos_frac_within_state": 0.0,
+        "share_of_all_positives": 0.0
+      },
+      "TIMEOUT": {
+        "windows": 3182455,
+        "positives": 203326,
+        "pos_frac_within_state": 0.06388967008174506,
+        "share_of_all_positives": 0.6964745697687165
+      },
+      "FAILED": {
+        "windows": 534355,
+        "positives": 80321,
+        "pos_frac_within_state": 0.15031392987807732,
+        "share_of_all_positives": 0.2751322207607147
+      },
+      "OOM": {
+        "windows": 68301,
+        "positives": 6645,
+        "pos_frac_within_state": 0.09728993718979224,
+        "share_of_all_positives": 0.022761838211114764
+      },
+      "NODE_FAIL": {
+        "windows": 2219,
+        "positives": 1644,
+        "pos_frac_within_state": 0.7408742676881478,
+        "share_of_all_positives": 0.005631371259454127
+      }
+    }
+  },
+  "test": {
+    "n_windows": 1411809,
+    "n_positive": 56831,
+    "n_negative": 1354978,
+    "positive_fraction": 0.040254028696516314,
+    "scale_pos_weight": 23.8422339920114,
+    "per_state": {
+      "COMPLETED": {
+        "windows": 926422,
+        "positives": 0,
+        "pos_frac_within_state": 0.0,
+        "share_of_all_positives": 0.0
+      },
+      "TIMEOUT": {
+        "windows": 408660,
+        "positives": 39857,
+        "pos_frac_within_state": 0.09753095482797436,
+        "share_of_all_positives": 0.7013249810842674
+      },
+      "FAILED": {
+        "windows": 51962,
+        "positives": 12862,
+        "pos_frac_within_state": 0.24752703899003117,
+        "share_of_all_positives": 0.2263201421759251
+      },
+      "OOM": {
+        "windows": 1606,
+        "positives": 1592,
+        "pos_frac_within_state": 0.9912826899128269,
+        "share_of_all_positives": 0.028012880294205626
+      },
+      "NODE_FAIL": {
+        "windows": 23159,
+        "positives": 2520,
+        "pos_frac_within_state": 0.10881298847100479,
+        "share_of_all_positives": 0.04434199644560187
+      }
+    }
+  },
+  "dummy_reference": {
+    "dummy_pr_auc": 0.0402540286965163,
+    "dummy_mean_proba": 0.0319896733982069,
+    "dummy_roc_auc": 0.5
+  },
+  "session1_lift": [
+    {
+      "model": "CatBoost",
+      "pr_auc": 0.0794668754632016,
+      "roc_auc": 0.6078386225488347,
+      "lift_over_baseline": 1.9741347148708834
+    },
+    {
+      "model": "LightGBM",
+      "pr_auc": 0.079296476280412,
+      "roc_auc": 0.6177761086080056,
+      "lift_over_baseline": 1.969901618499977
+    },
+    {
+      "model": "HistGradientBoostingClassifier",
+      "pr_auc": 0.0752257038313608,
+      "roc_auc": 0.6196942220159491,
+      "lift_over_baseline": 1.8687745367924138
+    },
+    {
+      "model": "EasyEnsembleClassifier",
+      "pr_auc": 0.070440424394585,
+      "roc_auc": 0.5658728582485087,
+      "lift_over_baseline": 1.7498975053068688
+    },
+    {
+      "model": "LogisticRegression",
+      "pr_auc": 0.0625639254423642,
+      "roc_auc": 0.5773345547532531,
+      "lift_over_baseline": 1.5542276752979667
+    },
+    {
+      "model": "XGBoost",
+      "pr_auc": 0.0594822505083947,
+      "roc_auc": 0.6031256521247478,
+      "lift_over_baseline": 1.4776719855009803
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "pr_auc": 0.0581738360395319,
+      "roc_auc": 0.5775524905555482,
+      "lift_over_baseline": 1.4451680471069572
+    },
+    {
+      "model": "SGDClassifier",
+      "pr_auc": 0.0574430798999869,
+      "roc_auc": 0.5588536271766169,
+      "lift_over_baseline": 1.4270144320972815
+    },
+    {
+      "model": "GaussianNB",
+      "pr_auc": 0.0572054235749389,
+      "roc_auc": 0.6202883687237407,
+      "lift_over_baseline": 1.4211105180607575
+    },
+    {
+      "model": "BalancedRandomForestClassifier",
+      "pr_auc": 0.0569575442235666,
+      "roc_auc": 0.6016967024007605,
+      "lift_over_baseline": 1.414952641212179
+    },
+    {
+      "model": "RandomForestClassifier",
+      "pr_auc": 0.0561973507354889,
+      "roc_auc": 0.5929043472081565,
+      "lift_over_baseline": 1.3960677367021492
+    },
+    {
+      "model": "MLPClassifier",
+      "pr_auc": 0.0524116157398054,
+      "roc_auc": 0.5725376905030818,
+      "lift_over_baseline": 1.3020216221076335
+    },
+    {
+      "model": "DecisionTreeClassifier",
+      "pr_auc": 0.0500329635600689,
+      "roc_auc": 0.5260480639259947,
+      "lift_over_baseline": 1.2429305880730115
+    },
+    {
+      "model": "RUSBoostClassifier",
+      "pr_auc": 0.0468824344455892,
+      "roc_auc": 0.554149921284345,
+      "lift_over_baseline": 1.1646644066124623
+    },
+    {
+      "model": "DummyClassifier",
+      "pr_auc": 0.0402540286965163,
+      "roc_auc": 0.5,
+      "lift_over_baseline": 0.9999999999999997
+    }
+  ],
+  "note": "PR-AUC baseline = TEST positive fraction (prevalence of the evaluated set). The TRAIN prior (~0.032) is a different number; do not use it to judge test PR-AUC. ROC-AUC baseline = 0.5.",
+  "reconciliation": "OK: baseline==Dummy.pr_auc and train_prior==Dummy.mean_proba"
+}

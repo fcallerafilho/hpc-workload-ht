@@ -1,0 +1,487 @@
+<title>Cerca de 3× o Acaso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --ground:#F5F7F8;
+  --surface:#FFFFFF;
+  --surface-2:#EDF1F3;
+  --ink:#131C22;
+  --ink-2:#55636D;
+  --ink-3:#84939E;
+  --rule:#DFE6EA;
+  --rule-strong:#C4D0D7;
+  --accent:#0F6E63;
+  --accent-soft:#D3E8E4;
+  --alert:#8C3A1E;
+  --alert-soft:#F1DFD7;
+  --chance:#A9B6BE;
+  --shadow:0 1px 2px rgba(19,28,34,.05), 0 8px 24px -16px rgba(19,28,34,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D1417;
+    --surface:#141D21;
+    --surface-2:#1B262B;
+    --ink:#E4EBEE;
+    --ink-2:#9DACB4;
+    --ink-3:#75858E;
+    --rule:#233036;
+    --rule-strong:#31424A;
+    --accent:#41BFAE;
+    --accent-soft:#12332F;
+    --alert:#E08157;
+    --alert-soft:#33201A;
+    --chance:#4C5C64;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D1417;
+  --surface:#141D21;
+  --surface-2:#1B262B;
+  --ink:#E4EBEE;
+  --ink-2:#9DACB4;
+  --ink-3:#75858E;
+  --rule:#233036;
+  --rule-strong:#31424A;
+  --accent:#41BFAE;
+  --accent-soft:#12332F;
+  --alert:#E08157;
+  --alert-soft:#33201A;
+  --chance:#4C5C64;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.62;
+  margin:0;
+  padding:0 20px 96px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto}
+
+/* ---------- masthead ---------- */
+.masthead{padding:64px 0 40px;border-bottom:2px solid var(--ink);margin-bottom:44px}
+.kicker{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 20px;
+}
+h1{
+  font-family:Spectral,Georgia,serif;
+  font-weight:600;font-size:clamp(2.3rem,6vw,3.4rem);line-height:1.06;
+  letter-spacing:-.015em;margin:0 0 18px;text-wrap:balance;
+}
+.standfirst{
+  font-family:Spectral,Georgia,serif;font-size:1.18rem;line-height:1.55;
+  color:var(--ink-2);margin:0;max-width:60ch;
+}
+.standfirst em{color:var(--ink);font-style:italic}
+.byline{
+  display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
+  letter-spacing:.05em;color:var(--ink-3);
+}
+
+/* ---------- sections ---------- */
+section{margin:0 0 56px}
+h2{
+  font-family:Spectral,Georgia,serif;font-weight:600;
+  font-size:1.62rem;line-height:1.2;letter-spacing:-.01em;
+  margin:0 0 6px;text-wrap:balance;
+}
+.sub{color:var(--ink-2);font-size:.95rem;margin:0 0 24px;max-width:64ch}
+h3{
+  font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:1rem;
+  margin:32px 0 8px;letter-spacing:-.005em;
+}
+p{margin:0 0 16px;max-width:66ch}
+strong{font-weight:600}
+a{color:var(--accent)}
+
+/* ---------- interval bars: the page's one real data device ---------- */
+.scale{
+  display:flex;flex-direction:column;gap:2px;
+  margin:8px 0 4px;
+}
+.scale-head{
+  display:grid;grid-template-columns:minmax(122px,1.1fr) 3fr minmax(112px,auto);
+  gap:16px;align-items:end;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+  padding-bottom:8px;border-bottom:1px solid var(--rule);margin-bottom:12px;
+}
+.scale-head span:last-child{text-align:right}
+.row{
+  display:grid;grid-template-columns:minmax(122px,1.1fr) 3fr minmax(112px,auto);
+  gap:16px;align-items:center;padding:9px 0;
+}
+.row + .row{border-top:1px solid var(--rule)}
+.row-label{font-size:.86rem;line-height:1.3;color:var(--ink-2)}
+.row.now .row-label{color:var(--ink);font-weight:600}
+.track{
+  position:relative;height:22px;
+  background:linear-gradient(var(--rule),var(--rule)) no-repeat center/100% 1px;
+}
+.track::after{ /* the 1x line: chance */
+  content:"";position:absolute;top:0;bottom:0;left:20%;width:1px;
+  background:var(--chance);
+}
+.band{
+  position:absolute;top:6px;height:10px;border-radius:5px;
+  background:var(--accent-soft);
+}
+.pt{
+  position:absolute;top:5px;width:12px;height:12px;margin-left:-6px;border-radius:50%;
+  background:var(--accent);border:2px solid var(--surface);
+}
+.row.past .band{background:var(--surface-2)}
+.row.past .pt{background:var(--chance)}
+.val{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.85rem;
+  text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2);
+}
+.row.now .val{color:var(--ink);font-weight:500}
+.scale-foot{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+  color:var(--ink-3);margin-top:12px;padding-top:10px;border-top:1px solid var(--rule);
+  display:flex;justify-content:space-between;
+}
+
+/* ---------- callout ---------- */
+.callout{
+  background:var(--surface);border:1px solid var(--rule);
+  border-left:3px solid var(--accent);
+  border-radius:2px;padding:20px 22px;margin:24px 0;box-shadow:var(--shadow);
+}
+.callout.warn{border-left-color:var(--alert)}
+.callout p:last-child{margin-bottom:0}
+.callout-tag{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-bottom:8px;
+}
+.callout.warn .callout-tag{color:var(--alert)}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;margin:20px 0;border:1px solid var(--rule);border-radius:2px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:460px}
+th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--rule)}
+thead th{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:400;background:var(--surface-2);
+  border-bottom:1px solid var(--rule-strong);white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+tr.hi td{background:var(--alert-soft)}
+tr.hi td:first-child{font-weight:600}
+.muted{color:var(--ink-3)}
+
+/* ---------- stat strip ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px;background:var(--rule);border:1px solid var(--rule);
+  border-radius:2px;overflow:hidden;margin:24px 0;
+}
+.stat{background:var(--surface);padding:16px 18px}
+.stat .n{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:1.5rem;
+  font-weight:500;line-height:1.1;letter-spacing:-.02em;display:block;
+  font-variant-numeric:tabular-nums;
+}
+.stat .k{font-size:.78rem;color:var(--ink-2);display:block;margin-top:6px;line-height:1.35}
+.stat.bad .n{color:var(--alert)}
+.stat.good .n{color:var(--accent)}
+
+/* ---------- attribution ladder ---------- */
+.ladder{list-style:none;margin:20px 0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.ladder li{background:var(--surface);padding:13px 18px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline}
+.ladder .what{font-size:.9rem}
+.ladder .delta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ladder .delta.neg{color:var(--alert)}
+.ladder .delta.nil{color:var(--ink-3)}
+
+hr.rule{border:none;border-top:1px solid var(--rule);margin:44px 0}
+footer{
+  border-top:2px solid var(--ink);padding-top:22px;margin-top:56px;
+  font-size:.82rem;color:var(--ink-3);
+}
+footer code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.95em;color:var(--ink-2)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){
+  .band,.pt{transition:none}
+}
+@media (max-width:560px){
+  .scale-head,.row{grid-template-columns:1fr;gap:4px}
+  .scale-head span:last-child,.val{text-align:left}
+  .track{margin:4px 0}
+}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="kicker">TCC · UNIFEI · Sessão 3</p>
+  <h1>Cerca de 3× o acaso</h1>
+  <p class="standfirst">O pipeline de previsão de falhas em nós GPU foi reconstruído do zero. Ele ficou
+  melhor — e a parte mais útil do trabalho foi descobrir <em>o quanto do que medimos não dá para
+  distinguir de ruído</em>.</p>
+  <div class="byline">
+    <span>pipeline_v2/</span>
+    <span>6 notebooks</span>
+    <span>1.407.162 janelas de teste</span>
+    <span>26 de agosto de 2026</span>
+  </div>
+</header>
+
+<section>
+  <h2>O número</h2>
+  <p class="sub">PR-AUC no conjunto de teste, dividido pelo baseline aleatório daquele conjunto. A barra é o
+  intervalo de 95 % por bootstrap reamostrando <em>jobs</em> — não janelas, porque janelas do mesmo job não
+  são independentes.</p>
+
+  <div class="scale" role="img" aria-label="Sessão 1: 1,97 vezes. Sessão 2: 2,13 vezes. Sessão 3: 3,12 vezes, com intervalo de confiança de 2,35 a 4,30 vezes.">
+    <div class="scale-head"><span>Sessão</span><span>Ganho sobre o acaso</span><span>PR-AUC</span></div>
+
+    <div class="row past">
+      <div class="row-label">Sessão 1 <span class="muted">— melhor de ~15 classificadores</span></div>
+      <div class="track"><span class="band" style="left:39.4%;width:0"></span><span class="pt" style="left:39.4%"></span></div>
+      <div class="val">0,0795 · 1,97×</div>
+    </div>
+
+    <div class="row past">
+      <div class="row-label">Sessão 2 <span class="muted">— CV honesta + tuning</span></div>
+      <div class="track"><span class="band" style="left:42.6%;width:0"></span><span class="pt" style="left:42.6%"></span></div>
+      <div class="val">0,0860 · 2,13×</div>
+    </div>
+
+    <div class="row now">
+      <div class="row-label">Sessão 3 <span class="muted">— pipeline_v2</span></div>
+      <div class="track"><span class="band" style="left:47%;width:39%"></span><span class="pt" style="left:62.4%"></span></div>
+      <div class="val">0,1253 · 3,12×</div>
+    </div>
+
+    <div class="scale-foot"><span>0×</span><span>1× = acaso</span><span>5×</span></div>
+  </div>
+
+  <p>A população de teste é a mesma das sessões anteriores — mesma divisão 80/20 por data de término do
+  job, todas as janelas de teste mantidas. Por isso os baselines batem na quarta casa decimal e a
+  comparação é legítima.</p>
+
+  <div class="callout">
+    <span class="callout-tag">Como citar</span>
+    <p><strong>“cerca de 3× melhor que o acaso”</strong>, não um múltiplo exato. A mesma configuração
+    treinada em 85 % do treino em vez de 100 % dá 0,1382 (3,44×), e o bootstrap pareado não separa as duas:
+    −0,0097, IC 95 % [−0,0258, +0,0114]. Os notebooks 03–05 usam o protocolo de 85 % e por isso citam 3,44×;
+    o notebook 06 reporta o refit pré-registrado em todo o treino. Nenhum dos dois é “o” número — são dois
+    sorteios do mesmo pipeline.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>De onde veio o ganho</h2>
+  <p class="sub">A escada de ablação do notebook 03, degrau a degrau, em PR-AUC.</p>
+
+  <ul class="ladder">
+    <li><span class="what"><strong>Medir mais coisas do nó</strong> — de 8 para 36 métricas</span><span class="delta">+0,059</span></li>
+    <li><span class="what"><strong>Taxas em vez de contadores acumulados</strong> — um contador carrega a <em>idade</em> do job, não a saúde do nó</span><span class="delta">+0,006</span></li>
+    <li><span class="what">Derivada e inclinação da janela <span class="muted">(&lt; 1 % do ganho do modelo)</span></span><span class="delta nil">≈ 0</span></li>
+    <li><span class="what">Normalizar por nó</span><span class="delta neg">pior</span></li>
+    <li><span class="what">Identidade do nó como feature</span><span class="delta neg">pior</span></li>
+    <li><span class="what">Ajuste de hiperparâmetros</span><span class="delta neg">−30,7 %</span></li>
+  </ul>
+
+  <p>Praticamente todo o ganho da sessão está no primeiro degrau. Nenhuma engenharia de features
+  sofisticada, nenhum modelo novo: <strong>só medir mais coisas do nó</strong>.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Os folds rejeitam, mas não escolhem</h2>
+  <p class="sub">O resultado metodológico — provavelmente a parte mais aproveitável do TCC.</p>
+
+  <p>Vinte candidatos foram avaliados em quatro <em>folds</em> temporais purgados. Quatro saíram
+  comprovadamente <strong>piores</strong> que o incumbente (os quatro folds concordando, |t| ≥ 2), então os
+  folds não são cegos. Mas <strong>nenhum saiu comprovadamente melhor</strong>. A variação de um
+  <em>mesmo</em> candidato entre folds (0,082 a 0,191) é maior que a variação entre <em>todos os vinte e
+  um</em> candidatos dentro de um único fold.</p>
+
+  <p>Obedecer ao melhor resultado da validação cruzada mesmo assim custou 30,7 % de PR-AUC. O notebook 04
+  desmonta a falha, uma mudança de cada vez:</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>O que mudou</th><th>Efeito no PR-AUC de teste</th></tr></thead>
+      <tbody>
+        <tr><td>Só as colunas <span class="muted">(top-50 vs 144, params padrão)</span></td><td class="num">−0,6 %</td></tr>
+        <tr class="hi"><td>Só os parâmetros <span class="muted">(127 folhas vs 31)</span></td><td class="num">−27,4 %</td></tr>
+        <tr><td>… destes: profundidade, com rodadas iguais</td><td class="num">−7,0 %</td></tr>
+        <tr class="hi"><td>… destes: <em>early stopping</em> parando em 26 rodadas em vez de ~150</td><td class="num">−24,7 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>As colunas escolhidas nunca foram o problema. O estrago foi o <em>early stopping</em> — e a validação
+  temporal que ele observa quase não acusou nada (AP 0,164 contra 0,170), porque ela é <strong>vizinha no
+  tempo</strong> enquanto o teste está mais distante.</p>
+
+  <div class="callout">
+    <span class="callout-tag">Regras que ficam</span>
+    <p>Não herdar o número de rodadas de um <em>early stopping</em> feito em validação temporalmente
+    vizinha. Não adotar um candidato que os folds não conseguem separar do incumbente. E mostrar um
+    intervalo pareado antes de afirmar qualquer diferença.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>A ressalva mais importante</h2>
+  <p class="sub">Se só uma coisa desta página for para a defesa, que seja esta.</p>
+
+  <p>TIMEOUT é 70 % dos positivos — e um TIMEOUT normalmente é o usuário subestimando o walltime, não um nó
+  doente. Restringindo a classe positiva a falhas de hardware de verdade (FAILED / OUT_OF_MEMORY /
+  NODE_FAIL), o resultado cai de 3,44× para <strong>1,94×</strong>.</p>
+
+  <p>No nível do job a mesma coisa aparece de forma mais concreta. A coluna que importa é a última:</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Estado</th><th>Jobs que falharam</th><th>Tiveram janela</th><th>Alertados</th><th>Recall operacional</th></tr></thead>
+      <tbody>
+        <tr><td>TIMEOUT</td><td class="num">298</td><td class="num">224 (75 %)</td><td class="num">177</td><td class="num">59,4 %</td></tr>
+        <tr class="hi"><td>FAILED</td><td class="num">772</td><td class="num">113 (15 %)</td><td class="num">84</td><td class="num">10,9 %</td></tr>
+        <tr><td>OOM</td><td class="num">25</td><td class="num">19 (76 %)</td><td class="num">16</td><td class="num">64,0 %</td></tr>
+        <tr><td>NODE_FAIL</td><td class="num">63</td><td class="num">22 (35 %)</td><td class="num">16</td><td class="num">25,4 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Jobs FAILED são 67 % de todas as falhas do teste, e só 15 % deles duram o suficiente para gerar
+  <em>uma única</em> janela de 20 minutos.</p>
+
+  <div class="callout warn">
+    <span class="callout-tag">Ressalva</span>
+    <p>Qualquer afirmação de que este modelo prevê <strong>saúde de nó</strong> tem que ser feita em
+    <strong>1,94×</strong>, não em 3,12×. O gargalo é a <strong>cobertura</strong>, não a qualidade do
+    modelo: a maior parte dos jobs que falham morre antes de existir uma janela.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span class="n">1.158</span><span class="k">jobs de teste que falharam</span></div>
+    <div class="stat bad"><span class="n">33 %</span><span class="k">duraram o bastante para gerar uma janela</span></div>
+    <div class="stat bad"><span class="n">25 %</span><span class="k">de todas as falhas foram alertadas</span></div>
+    <div class="stat bad"><span class="n">50 %</span><span class="k">de alarme falso nos jobs que terminaram bem</span></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Como isso seria usado de verdade</h2>
+  <p class="sub">O limiar F2 marca 28 % de todas as janelas com precisão de 0,070 — sozinho, não é um ajuste
+  operável. A visão por orçamento de alertas é a útil.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Orçamento</th><th>Janelas</th><th>Precisão</th><th>Recall</th><th>Ganho de precisão</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td>topo 0,1 %</td><td class="num">1.412</td><td class="num">0,900</td><td class="num">0,022</td><td class="num">22,4×</td></tr>
+        <tr><td>topo 0,5 %</td><td class="num">7.162</td><td class="num">0,343</td><td class="num">0,043</td><td class="num">8,5×</td></tr>
+        <tr><td>topo 1 %</td><td class="num">14.291</td><td class="num">0,228</td><td class="num">0,058</td><td class="num">5,7×</td></tr>
+        <tr><td>topo 5 %</td><td class="num">70.363</td><td class="num">0,155</td><td class="num">0,192</td><td class="num">3,8×</td></tr>
+        <tr><td>topo 10 %</td><td class="num">140.719</td><td class="num">0,113</td><td class="num">0,282</td><td class="num">2,8×</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>As 0,1 % janelas de maior score são 90 % verdadeiras.</strong> É esse o formato para levar a um
+  operador: uma fila pequena e de alta pureza, não um limiar que marca um quarto do cluster.</p>
+
+  <h3>Antecedência do aviso</h3>
+  <p>Mediana de 152 minutos no geral — mas só <strong>36 minutos</strong> nas falhas de hardware. A cauda
+  longa é de jobs TIMEOUT que o modelo reconheceu cedo como longos, o que não é o mesmo que ver uma falha
+  chegando.</p>
+
+  <h3>Calibração</h3>
+  <p>A saída bruta é um <em>ranking</em>, não uma probabilidade: média 0,42 contra uma taxa real de 0,0402.
+  Uma isotônica ajustada na validação leva o Brier de 0,2278 para 0,0466, ao custo de 12,7 % de PR-AUC —
+  ela colapsa faixas de score em empates. <strong>Ordenar e alertar com os scores brutos;</strong> calibrar
+  só onde uma probabilidade for realmente lida.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>As decisões do pipeline, e o que as alternativas custam</h2>
+  <p class="sub">Cada linha foi medida, não escolhida por intuição. Ganhos sobre o baseline de cada
+  variante — as razões são comparáveis entre si, os PR-AUC crus não.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Decisão</th><th>Mantido</th><th>Alternativas</th><th>Observação</th></tr></thead>
+      <tbody>
+        <tr><td>Janela</td><td>40 amostras <span class="muted">(20 min)</span></td><td class="num">20 → 2,94× · 10 → 3,14×</td><td>W=40 ganha em ganho e antecedência; W=10 em cobertura</td></tr>
+        <tr><td>Horizonte</td><td>2 h</td><td class="num">0,5 h → 2,59× · 1 h → 3,31× · 4 h → 2,59×</td><td>PR-AUC cru sobe com o horizonte só porque o baseline sobe</td></tr>
+        <tr><td>Regra do rótulo</td><td>maioria</td><td class="num">qualquer → 2,91×</td><td></td></tr>
+        <tr class="hi"><td>Classe positiva</td><td>as quatro falhas</td><td class="num">só hardware → 1,94×</td><td>a ressalva acima</td></tr>
+        <tr><td>Stride de treino</td><td>5</td><td class="num">10 → 3,23× · 20 → 2,89×</td><td>curva ainda subindo</td></tr>
+        <tr><td>Divisão</td><td>por data de término, 80/20</td><td class="muted">embargo já implícito</td><td>o conjunto de ajuste já para antes da fronteira</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Vale reparar na linha do <strong>stride</strong>: a última duplicação dos dados de treino ainda comprou
+  +6,5 % de PR-AUC. A curva de aprendizado <em>não</em> saturou — é a única alavanca claramente não testada,
+  e custa tempo de máquina, não credibilidade.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Por que não se compara com o Skrzeczek</h2>
+  <p>Aquele trabalho reporta ROC-AUC ≈ 0,98 no mesmo traço público, agregando a série temporal inteira de
+  cada job em uma única linha e depois classificando — ou seja, <strong>as features incluem o momento da
+  falha</strong>. Ele responde “este job falhou?”, que é uma pergunta respondível depois do fato.</p>
+  <p>Aqui a previsão sai de uma janela de 20 minutos que termina <strong>antes</strong> de o horizonte de 2
+  horas abrir. Nada depois do último instante da janela é visível para o modelo. Pergunta diferente,
+  unidade diferente, métrica diferente — colocar os dois números lado a lado seria desonesto.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>O que uma próxima sessão deveria atacar</h2>
+  <ol>
+    <li><strong>Cobertura.</strong> A maior parte dos jobs que falham morre antes de existir uma janela de
+    20 minutos. A varredura de janela do notebook 05 é o primeiro olhar (W=10 cobre 50 % em vez de 33 %);
+    um desenho de janela variável é a resposta de verdade.</li>
+    <li><strong>Separar saúde de nó de erro de usuário.</strong> Um modelo de duas cabeças — falha de
+    hardware e estouro de walltime previstos separadamente — seria mais útil e mais honesto que um que
+    mistura os dois.</li>
+    <li><strong>Stride mais denso.</strong> A curva ainda está subindo em stride 5.</li>
+    <li><strong>Intervalos em tudo.</strong> Várias comparações das sessões 1–2 são menores que o intervalo
+    medido aqui.</li>
+  </ol>
+</section>
+
+<footer>
+  Gerado a partir de <code>pipeline_v2/results/*.json</code> pelos notebooks 01–06. Números completos em
+  <code>docs/findings.md</code> (inglês) e <code>docs/resumo_para_o_grupo.md</code> (português).
+  Nada das sessões 1–2 foi reaproveitado — só as noções de tempo.
+</footer>
+
+</div>
