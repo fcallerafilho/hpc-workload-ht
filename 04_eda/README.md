@@ -15,13 +15,13 @@ Run them in order; each one caches what the next one needs.
 
 | notebook | what it does | runtime |
 |---|---|---|
-| `01_population.ipynb` | Census of the whole table, the population funnel, jobs and snapshots per label, job durations, telemetry cadence and gaps, node sharing, temporal drift, hardware and queue context, column health. Writes `data/jobs.parquet`. | ~3 min |
-| `02_windows.ipynb` | Builds every 20-minute window and its label, then looks at what the aggregated features contain: box plots per metric and per label, single-feature separability, redundancy, precursor curves, horizon sensitivity. Writes `data/windows.parquet`. | ~6 min |
-| `03_use_case.ipynb` | Turns those measurements into ceilings: observability, lead time, node-hours burned and recoverable, a telemetry-free baseline, and the per-state verdict. | <1 min |
+| `01_population.ipynb` | *Part 1* — the dataset as it is: census, population funnel, states, durations, cadence and gaps, hardware and queues, column health. *Part 2* — four checks prompted by a downstream result: observability, co-tenancy, TIMEOUT, drift. Writes `data/jobs.parquet`. | ~3 min |
+| `02_windows.ipynb` | *Part 1* — builds every 20-minute window and its label. *Part 2* — four questions in a chain: is the label determined by the features, does any single feature separate the classes, do the features move as the end approaches, would another horizon change the answer. Writes `data/windows.parquet`. | ~6 min |
+| `03_use_case.ipynb` | One oracle's ceilings: which failures are observable and how early, a node-hour cascade from the prize down to what is recoverable, a telemetry-free floor, and the per-state verdict. | <1 min |
 
-Every notebook starts with the same ~35-line setup cell, repeated verbatim, so
-each can be read and run on its own. The notebooks share **data**, never code —
-there are no `.py` modules to chase.
+Each notebook opens with the same short setup cell, so it can be read and run on
+its own. The notebooks share **data**, never code — there are no `.py` modules to
+chase.
 
 ## The pipeline constants
 
@@ -63,14 +63,22 @@ window during a running job.
   model.
 
 - **The horizon caps the value, more than coverage does.** Failures burn 37,249
-  node-hours (39 % of the cluster). A perfect detector alerting at the first
-  *positive* window recovers 7.8 % of that; one allowed to alert at the job's
-  first window would recover 97 %. The 2-hour horizon alone puts 89 % of the
-  prize out of reach.
+  node-hours (39 % of the cluster). Coverage costs under 1 % of that, because the
+  failures nobody can see are the short ones. An oracle allowed to alert at a
+  job's first window recovers 97 %; restricted to alerting inside the 2-hour
+  horizon it recovers 7.8 %. The horizon alone puts 89 % of the prize out of
+  reach.
 
 - **No single feature separates the classes.** The best of the 56 reaches
   |AUC − 0.5| = 0.12, the median 0.05, and 30 of 56 are near-duplicates of another
   feature (|ρ| > 0.95). `std` separates least of the four aggregations.
+
+- **What separation exists is a level, not a trajectory.** Failing and completing
+  jobs are offset from each other six hours before the end, and the offset barely
+  moves as the end approaches — the features report what kind of job this is, not
+  that something is about to go wrong with it. `NODE_FAIL` (a collapse in the last
+  10–15 minutes) and `OUT_OF_MEMORY` are the exceptions, and they are the two
+  smallest states.
 
 `data/facts_all.json` holds every headline number, written by the notebooks, so
 nothing has to be transcribed by hand.

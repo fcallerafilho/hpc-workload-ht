@@ -1,7 +1,0 @@
-strategy,n_splits,n_candidates,cv_ap_mean,cv_ap_std,test_pr_auc,test_roc_auc,best_params,fit_time_s
-stratified,3,2,0.4626574147068318,0.003463891471964707,0.08077446904201714,0.6179529426366298,"{""learning_rate"": 0.1, ""min_child_samples"": 20, ""num_leaves"": 31}",278.1
-group,3,2,0.21529081539881703,0.006400962281761073,0.08077446904201714,0.6179529426366298,"{""learning_rate"": 0.1, ""min_child_samples"": 20, ""num_leaves"": 31}",281.8
-stratified_group,3,2,0.21597938466286404,0.010933040911376136,0.07747358880589449,0.6110583000337892,"{""learning_rate"": 0.1, ""min_child_samples"": 100, ""num_leaves"": 31}",265.6
-tscv,5,2,0.0879791747736712,0.022545661766140455,0.08077446904201714,0.6179529426366298,"{""learning_rate"": 0.1, ""min_child_samples"": 20, ""num_leaves"": 31}",357.8
-purged,5,2,0.11980932971908431,0.03363003073850818,0.08077446904201714,0.6179529426366298,"{""learning_rate"": 0.1, ""min_child_samples"": 20, ""num_leaves"": 31}",413.7
-logo_weekly,9,2,0.13612347434256217,0.043175208787242556,0.07747358880589449,0.6110583000337892,"{""learning_rate"": 0.1, ""min_child_samples"": 100, ""num_leaves"": 31}",824.1

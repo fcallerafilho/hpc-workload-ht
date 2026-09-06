@@ -16,3 +16,17 @@ dataset/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# LLM
+.claude
+
+# Ignore other analysis for now
+01_*
+02_*
+03_*
+05_*
+06_*
+07_*
+08_*
+09_*
+10_*

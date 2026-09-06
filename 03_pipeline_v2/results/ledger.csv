@@ -1,7 +1,0 @@
-decision,kept,alternatives,effect on lift,note
-window length,40 snapshots (20 min),"20 -> 2.94x, 10 -> 3.14x",3.44x,job coverage 33% vs 50% at W=10
-horizon,2 h,"0.5h -> 2.59x, 1.0h -> 3.31x, 4.0h -> 2.59x",3.44x,"shorter horizon = rarer positives, tighter warning"
-label rule,majority (>= W/2),any -> 2.91x,-15.5%,positives 0.0402 -> 0.0427
-positive class,all four failure states,hardware only -> 1.94x,-43.7%,TIMEOUT is 70% of the positives
-train stride,5,"10 -> 3.23x, 20 -> 2.89x",3.44x,curve still RISING at stride 5 - denser may still pay
-split,"by job end date, 80/20",+ 2 h embargo -> 3.44x,+0.0%,"3,059 train rows dropped"
