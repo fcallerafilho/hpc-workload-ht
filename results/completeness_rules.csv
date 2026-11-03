@@ -1,0 +1,6 @@
+rule,definition,jobs,block_test_pos_a,block_test_pos_b,users_with_failure_in_main_test,outcome
+R80,≥ 80 % in every channel (plan),10581,264/84/75,43/53/48,12,fails T2
+Rrel,≥ 80 % of typical delivery,15408,387/288/97,56/78/75,19,fails T2
+R1,≥ 1 reading in every channel,24107,575/227/124,97/585/113,31,primary
+R60,≥ 60 % (record only),18512,392/231/103,80/91/96,23,not in procedure
+R100,100 % (record only),1406,28/33/21,3/0/1,2,fails T2

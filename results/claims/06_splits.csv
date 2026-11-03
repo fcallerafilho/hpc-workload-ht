@@ -1,0 +1,13 @@
+claim,computed,paper,ok,note
+Main test: first day (October),1,1,True,
+Main test: last day (October),12,12,True,
+Main test: length in days,11,11,True,
+Main test: jobs (all five states),4821,"4,821",True,
+Main test: users with a target-(a) failure,31,31,True,
+"Target-(a) prevalence, main training set",15.4%,15.4%,True,
+"Target-(a) prevalence, main test set",13.7%,13.7%,True,
+"Below the floor: block-1 test, target (b)",97,97,True,
+"Below the floor: qos 11 in the main test, target (b)",98,98,True,
+Ten largest users: share of target-(a) failures in the main test,94%,94%,True,
+Ten largest users: share of target-(a) failures (Limitations),94.4%,94.4%,True,
+Chance of top 3 in >= 2 of 3 blocks,21.6%,21.6%,True,

@@ -1,0 +1,8 @@
+claim,computed,paper,ok,note
+PM100 jobs whose times agree with ExaData to the second,231238,"231,238",True,
+Jobs in the power-step check,300,300,True,
+Node power before the start (W),393,393,True,
+Node power after the start (W),544,544,True,
+Start of the bin with the largest step (h),0,0,True,
+"Median correlation, trace shifted +2 h",0.83,0.83,True,
+"Median correlation, no shift",-0.00,0.00,True,paper: 'about 0.00'

@@ -1,0 +1,11 @@
+group,source,channels,cadence_s
+mem_active,ganglia,"mem_total, mem_free, mem_cached, mem_buffers",40/60
+swap_free,ganglia,swap_free,40
+cpu_wio,ganglia,cpu_wio,90
+proc_run,ganglia,proc_run,80
+load_one,ganglia,load_one,90
+gpu_core_temp,IPMI,"gpu0_core_temp, gpu1_core_temp, gpu3_core_temp, gpu4_core_temp",20
+gpu_mem_temp,IPMI,"gpu0_mem_temp, gpu4_mem_temp",20
+fan,IPMI,fan0_0,20
+node_power,IPMI,total_power,20
+inlet_temp,IPMI,ambient,20
