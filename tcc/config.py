@@ -12,8 +12,8 @@ DATASET = Path(os.environ.get("TCC_DATASET", ROOT / "dataset"))
 M100 = DATASET / "m100"                          # M100 ExaData, extracted: year_month=20-05 ... 20-10
 PM100_JOBS = DATASET / "pm100" / "job_table.parquet"
 DATA = ROOT / "data"                             # derived data written by the notebooks (not versioned)
-RESULTS = ROOT / "results"                       # the paper's tables as CSV and the claim checks (versioned)
-for _d in (DATA, RESULTS / "claims"):
+RESULTS = ROOT / "results"                       # the paper's tables as CSV (versioned)
+for _d in (DATA, RESULTS):
     _d.mkdir(parents=True, exist_ok=True)
 
 # ------------------------------------------------------------------ fixed constants

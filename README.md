@@ -9,8 +9,7 @@ relevance rule, for failures or for timeouts.
 
 ## Notebooks
 
-Run in order. Each number the paper reports is compared with the computed value by a `claim(...)`
-call; the results are in `results/claims/`.
+Run in order.
 
 | Notebook | Paper section |
 |---|---|
@@ -49,6 +48,6 @@ cache their output in `data/`.
 
 ```
 notebooks/   analysis, one notebook per part of the paper
-tcc/         shared code: paths and constants, temporal splits, claim()
-results/     paper tables as CSV, claim checks
+tcc/         shared code: paths and constants, temporal splits
+results/     paper tables as CSV
 ```

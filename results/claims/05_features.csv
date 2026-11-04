@@ -1,6 +1,0 @@
-claim,computed,paper,ok,note
-V1: latest reading after the job's start (s),1199,"1,199",True,
-Telemetry feature columns (10 groups x 4 statistics),40,40,True,
-Complete subset: share of jobs with a missing telemetry feature,0%,0%,True,
-Multi-node share of complete jobs,35.1%,35.1%,True,
-Multi-node share of target-(a) failures,29.9%,29.9%,True,
